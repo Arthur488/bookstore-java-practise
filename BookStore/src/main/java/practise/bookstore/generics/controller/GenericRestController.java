@@ -56,11 +56,7 @@ import practise.models.BaseEntity;
                 contact = @Contact(name = "Arthur Rakhmankulov", email = "dev.arthur.r@gmail.com")
         ),
         servers = {
-                @Server(url = "http://localhost:8080/Store/api/categories", description = "RESTful Web Services for Categories"),
-                @Server(url = "http://localhost:8080/Store/api/authors", description = "RESTful Web Services for Authors"),
-                @Server(url = "http://localhost:8080/Store/api/orders", description = "RESTful Web Services for Orders"),
-                @Server(url = "http://localhost:8080/Store/api/books", description = "RESTful Web Services for Books"),
-                @Server(url = "http://localhost:8080/Store/api/reports", description = "RESTful Web Services for Reports")
+                @Server(url = "http://localhost:8080/Store/api/categories", description = "RESTful Web Services")
         }
 )
 public class GenericRestController <T extends BaseEntity> {
